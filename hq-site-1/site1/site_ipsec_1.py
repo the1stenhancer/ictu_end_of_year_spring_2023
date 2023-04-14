@@ -275,7 +275,8 @@ if __name__ == "__main__":
         command_string="ping ip {} source {}".format(
             PING_DESTINATION_ADDRESS,
             PING_SOURCE_ADDRESS
-        )
+        ),
+        read_timeout=60
     )
     print("\nPING RESULT:\n{}\n".format(ping_result))
 
