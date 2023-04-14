@@ -9,9 +9,14 @@ env = environ.Env()
 environ.Env.read_env()
 
 
-# INITIALIZATION PHASE
+# GLOBAL NAMING CONVENTION
 
 SITE_NUMBER = ""
+
+GLOBAL_NAME = "HQ-SITE-{}".format(SITE_NUMBER)
+
+
+# INITIALIZATION PHASE
 
 SITE_EDGE_ROUTER_PRIVATE_IP = ""
 
